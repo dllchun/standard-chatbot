@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* In your global.css or Tailwind's @layer base */
+html,
+body {
+  @apply overflow-hidden h-full;
+}
