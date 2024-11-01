@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import ChatSidebar from "../components/ChatSidebar";
 import ChatContent from "../components/ChatContent";
 
-const apiKey = "8491d0d0-c047-435c-97b6-e79e5e0cf7ff";
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 const chatbotId = "Kr1xs3v2UBvEaDnuSxV9F";
 const baseUrl = `https://www.chatbase.co/api/v1/get-conversations?chatbotId=${chatbotId}&startDate=2024-01-01&endDate=2024-12-12`;
 
